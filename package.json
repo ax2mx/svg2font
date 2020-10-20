@@ -1,0 +1,28 @@
+{
+  "name": "svg2font",
+  "version": "0.1.0",
+  "description": "Generate web fonts from a bunch of SVGs",
+  "main": "index.js",
+  "scripts": {
+    "init": "rm -rf fonts && mkdir -p fonts",
+    "font": "icon-font-generator src/*.svg -o fonts -name icon-font --json false --html falses --height 1000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ax2mx/svg2font.git"
+  },
+  "keywords": [
+    "icon",
+    "font",
+    "svg"
+  ],
+  "author": "Andrei Marukhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ax2mx/svg2font/issues"
+  },
+  "homepage": "https://github.com/ax2mx/svg2font#readme",
+  "dependencies": {
+    "icon-font-generator": "^2.1.10"
+  }
+}
